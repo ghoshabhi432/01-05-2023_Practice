@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int a,b;
+	cin>>a>>b;
+	int i,j;
+	for(i=a;i<=b;i++){
+	    for(j=2;j<i;j++){
+	        if(i%j==0){
+	            break;
+	        }
+	    }
+	    if(j==i){
+	        cout<<i<<" ";
+	    }
+	}
+	
+	
+	return 0;
+}
+
+//output
+1 30
+
+2 3 5 7 11 13 17 19 23 29 
